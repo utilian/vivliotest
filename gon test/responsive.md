@@ -54,7 +54,7 @@ h2 {
 
 
 <figure>
-<img src="img/gon.jpg" width="128" height="128" alt="東伏見稲荷の狐">
+<img src=" " width="128" height="128" alt="東伏見稲荷の狐">
 <figcaption>東伏見稲荷の狐</figcaption>
 </figure>
 
