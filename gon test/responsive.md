@@ -51,14 +51,6 @@ h2 {
 ###### 見出し6
 
 
-
-
-<figure>
-<img src=" " width="128" height="128" alt="東伏見稲荷の狐">
-<figcaption>東伏見稲荷の狐</figcaption>
-</figure>
-
-
 <h2><a id="midashi20">二</a></h2>
 
 
