@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+// 行数
+$lines: 15;
+// 1行あたり文字数
+$characters-per-line: 39;
+
+html {
+  /* 組み方向 */
+  writing-mode: vertical-rl;
+
+  orphans: 1;
+  widows: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* タイトル文字列セット */
+.title {
+  string-set: title content();
+}
+
+@page {
+  size: 105mm 148mm;
+  // 行送り * 行数
+  width: $base-line-height * $lines;
+  // フォントサイズ * 文字数
+  height: $base-font-size * $characters-per-line;
+  margin-top: 15mm;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@page :left {
+  @top-left {
+    /* 左上ノンブル、柱（タイトル文字列） */
+    content: counter(page) "　　" string(title);
+    font-size: 6pt;
+    vertical-align: top;
+    margin-left: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+}
+
+@page :right {
+  @top-right {
+    /* 右上ノンブル */
+    content: counter(page);
+    font-size: 6pt;
+    vertical-align: top;
+    margin-right: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+}
